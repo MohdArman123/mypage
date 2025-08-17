@@ -1,0 +1,169 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+.navbar .nav-links li {
+  margin-left: 20px;
+}
+.navbar .nav-links a {
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.navbar .nav-links a:hover {
+  color: #007bff;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .profile-photo {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 5px solid #fff;
+  transition: transform 0.3s ease;
+}
+header .profile-photo:hover {
+  transform: scale(1.05);
+}
+header h1 {
+  font-size: 2.8rem;
+  margin: 20px 0 10px;
+}
+header .professional-title {
+  font-size: 1.4rem;
+  color: #dcdcdc;
+  margin-bottom: 15px;
+}
+header .upwork-status a {
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+header .upwork-status a:hover {
+  color: #dcdcdc;
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 0;
+  text-align: center;
+}
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.about-section p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Info and Contact Section */
+.info-contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 60px 0;
+  text-align: center;
+}
+.info-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.info-card i {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+.info-card p {
+  font-size: 1.1rem;
+}
+.info-card a {
+  color: #007bff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.info-card a:hover {
+  color: #0056b3;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+  header .professional-title {
+    font-size: 1.2rem;
+  }
+  .navbar .nav-links li {
+    margin-left: 10px;
+  }
+}
